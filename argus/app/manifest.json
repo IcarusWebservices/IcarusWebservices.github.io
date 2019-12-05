@@ -9,7 +9,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/pwa-examples/js13kpwa/index.html",
+    "start_url": "/argus/app.html",
     "display": "fullscreen",
     "theme_color": "#B12A34",
     "background_color": "#B12A34"
