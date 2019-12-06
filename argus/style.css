@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Solway&display=swap');
+
+.centered-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.score-container {
+    display: block;
+}
+
+.progress-container {
+    text-align: center;
+}
+
+progress {
+    background-color: #f3f3f3;
+    border: 0;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 9px;
+    display: inline-block;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 9px;
+    display: inline-block;
+}
+progress::-webkit-progress-value {
+    background-color: red;
+    border-radius: 9px;
+}
+
+.score {
+    font-size: 4rem;
+    color: red;
+    display: inline;
+}
+
+.out-of {
+    font-size: 2rem;
+    display: inline;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(56, 56, 56);
+    font-family: 'Solway', serif;
+}

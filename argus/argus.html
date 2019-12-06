@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
     <title>Argus</title>
 </head>
 <body>
+
+    <div class="centered-container">
+        <img src="icons/icon-512-2.png" alt="" width="200">
+        <h1>Uw crediet score:</h1>
+        <div class="score-container">
+            <div class="score">512</div>
+            <div class="out-of">/ 1000</div>
+        </div>
+        <div class="progress-container">
+            <progress value="512" max="1000" id="credit-score"></progress>
+        </div>
+        
+    </div>
+
     <script>
         if('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js');
