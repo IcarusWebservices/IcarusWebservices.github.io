@@ -29,6 +29,13 @@
         } else {
             console.log("HEY WHATS UP MAAAN?!1?");
         };
+        
+        if (navigator.geolocation) {
+            let pos = navigator.geolocation.getCurrentPosition(showPosition);
+            console.log(pos)
+          } else {
+            console.log("Werkt niet....")
+          }
     </script>
 </body>
 </html>
