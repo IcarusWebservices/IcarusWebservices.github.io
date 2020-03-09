@@ -31,8 +31,9 @@
         };
         
         if (navigator.geolocation) {
-            let pos = navigator.geolocation.getCurrentPosition(showPosition);
-            console.log(pos)
+            navigator.geolocation.getCurrentPosition((pos)=> {
+                console.log(pos)
+            });
           } else {
             console.log("Werkt niet....")
           }
